@@ -1,0 +1,81 @@
+.main-nav {
+    height: 40px;
+    background-color: #232F3E;
+    color: #fff;
+    justify-content: space-between; 
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.nav-item:first-child {
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.sub-nav {
+    background-color: #fafafa;
+}
+
+.sub-nav-list {
+    height: 30px;
+    padding:  0 9px 0 15px ;
+    font-size: 12px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sub-nav-list i {
+    color: #A7ACB2;
+    font-size: 8px;
+}
+.sub-nav-item {
+    padding: 0 11px;
+    cursor: pointer;
+}
+.sub-nav-item:first-child {
+    font-weight: 600;
+}
+
+.sub-nav-item:hover {
+    color: var(--primary-hover);
+}
+
+.sub-nav-item:nth-child(1),
+.sub-nav-item:nth-child(2) {
+    position: relative;
+}
+.sub-nav-item:nth-child(1):after,
+.sub-nav-item:nth-child(2):after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+    bottom: -10px;
+    left: 0;
+}
+
+ .sub-nav-item:nth-child(1):hover::after,
+ .sub-nav-item:nth-child(2):hover::after
+ {   
+    background-color: var(--primary-hover);
+}
+
+
+
+
+
+
+/* SPRITES */
+.hamburger-menu {
+    background: url('./../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -172px -255px;
+    width: 17px;
+    height: 14px;
+    }
+    
