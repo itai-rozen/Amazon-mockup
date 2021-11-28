@@ -1,0 +1,69 @@
+.related-container {
+    margin: 0 25px;
+    width: 79%;
+}
+
+.related-header-container {
+    justify-content: space-between;
+}
+
+.sponsored { 
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.carousel-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% /6);
+}
+
+.card-item img {
+    width: 160px;
+    height: 160px;
+}
+
+.card-item a {
+    color: var(--link-color);
+}
+
+.card-item a:hover {
+    text-decoration: underline;
+    color: var(--price-color);
+}
+
+.carousel-arrow {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--dropdown-color)
+}
+
+.stars4half {
+    background: url('./../assets/images/aui-mini-sprite-2015-02.png') no-repeat -170px 0;
+    width: 80px;
+    height: 16px;
+}
+.stars5 {
+    background: url('./../assets/images/aui-mini-sprite-2015-02.png') no-repeat 0 0;
+    width: 80px;
+    height: 16px;
+}
+.stars4 {
+    background: url('./../assets/images/aui-mini-sprite-2015-02.png') no-repeat -16px 0;
+    width: 80px;
+    height: 16px;
+}

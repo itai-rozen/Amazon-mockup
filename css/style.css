@@ -12,8 +12,15 @@
     /* --primary-color : #F3A847; */
     --primary-hover : #F3A847;
     --primary-color:  #FEBD69;  
+    --secondary-color: #FFD814;
+    --button-hover-color: #F7CA00;
+    --button-color: #FFA41C;
     --arrow-color: #A7ACB2;  
     --price-color: #B1314D;
+    --link-color: #0471A2;
+    
+    --dropdown-color: #f1f1f1;
+    --border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -39,9 +46,17 @@ li {
 }
 .pointer { cursor: pointer;}
 .border { border: 1px solid transparent;}
-
+.mb15 { margin-bottom: 15px;}
+.mt15 { margin-top: 15px;}
+.mb10 { margin-bottom: 10px;}
+.mt10 { margin-top: 10px;}
+.hide {display: none;}
 .border:hover {
     border-color: #fff;
+}
+
+.hover-price:hover {
+    color: var(--price-color);
 }
 
 .no-margin  {
@@ -49,5 +64,13 @@ li {
 }
 
 .price-color {
+    font-size: 18px;
     color: var(--price-color);
+}
+
+article {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

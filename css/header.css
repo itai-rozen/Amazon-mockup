@@ -5,11 +5,17 @@ header {
     align-items: center;
     color: #fff;
     font-size: 14px;
+    overflow-x: hidden;
 }
 
 header i {
     color: var(--arrow-color);
 }
+
+.sign-mobile    {
+    display: none;
+}
+
 .header-bar {
     width: 100%;
     justify-content: space-between;
@@ -52,7 +58,6 @@ header .search-container  {
 }
 
 .search-container .dropdown {
-    color: rgba(0, 0, 0, 0.5);
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
@@ -166,6 +171,12 @@ header .cart-img {
     background: url('./../assets/images/rzrQQdi0aRm6Dap.png') no-repeat 0 -130px ;
     width: 24px;
     height: 18px;
+}
+
+.sign-icon {
+    background: url('./../assets/images/new-nav-sprite-global-1x_blueheaven-account._CB658093420_.png') no-repeat -142px -303px;
+	width: 24px;
+	height: 24px;
 }
 
 

@@ -73,9 +73,13 @@
 
 
 /* SPRITES */
-.hamburger-menu {
+ .hamburger-menu {
     background: url('./../assets/images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -172px -255px;
     width: 17px;
     height: 14px;
     }
+
+header .hamburger-menu {
+    display: none;
+}
     

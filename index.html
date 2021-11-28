@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Amazon.com: Zildjian Crash Cymbal (ILH14C) : Musical Instruments</title>
@@ -19,7 +22,7 @@
 
 
     <header class="header flex row">
-        <div class="header-titles border">
+        <div class="header-titles border flex">
             <div class="header-logo pointer"></div>
         </div>
         <div class="header-bar flex row ">
@@ -150,34 +153,30 @@
                 <ul class="small-img-list">
                     <li class="small-img-item item-1 flex center">
                         <img src="./assets/images/31yj8Dx6rBS._AC_US40_.jpg" alt="">
-                        <input class="radio-1" type="radio" checked name="" id="">
+                        <input class="radio" type="radio" checked name="" id="">
                     </li>
                     <li class="small-img-item item-2">
                         <img src="./assets/images/41OGJ+mv5PL._AC_US40_AA50_.jpg" alt="">
-                        <input type="radio" name="" id="">
+                        <input class="radio" type="radio" name="" id="">
                     </li>
                     <li class="small-img-item item-3">
                         <img src="./assets/images/413KJehPI6L._AC_US40_.jpg" alt="">
-                        <input type="radio" name="" id="">
+                        <input class="radio" type="radio" name="" id="">
                     </li>
                     <li class="small-img-item item-4">
                         <img src="./assets/images/41-M+79fPwL._AC_US40_.jpg" alt="">
-                        <input type="radio" name="" id="">
+                        <input class="radio" type="radio" name="" id="">
                     </li>
                     <li class="small-img-item item-5">
                         <img src="./assets/images/41xe5as+AJL._AC_US40_.jpg" alt="">
-                        <input type="radio" name="" id="">
+                        <input class="radio" type="radio" name="" id="">
                     </li>
                 </ul>
-                <div class="big-img-container">
-                    <div class="img-wrapper flex column center">
-                        <img class="img-1" src="./assets/images/71keflo4LrS._AC_SX679_.jpg" alt="">
-                        <img class="img-2" src="./assets/images/41OGJ+mv5PL._AC_.jpg" alt="">
-                        <img class="img-3" src="./assets/images/413KJehPI6L._AC_.jpg" alt="">
-                        <img class="img-4" src="./assets/images/81sTOPkQxeL._AC_SX679_.jpg" alt="">
-                        <img class="img-5" src="./assets/images/41xe5as+AJL._AC_.jpg" alt="">
-                        <p>Click image to open expanded view</p>
+                <div class="img-wrapper flex column center">
+                    <div class="big-img-container">
+                        <img class="big-img-render" src='./assets/images/71keflo4LrS._AC_SX679_.jpg' alt="big image">
                     </div>
+                    <p>Click image to open expanded view</p>
                 </div>
             </aside>
             <section class="product-info-container">
@@ -185,14 +184,17 @@
                     <h1 class="product-header">Zildjian Crash Cymbal (ILH14C)</h1>
                     <a href="#" class="product-store-link">Visit the Avedis Zildjian Company Store</a>
                     <div class="rating-container flex row">
-                        <div class="stars"></div><span><i class="fas fa-angle-down"></i></span>
-                        <p class="rating">41 ratings</p>
+                        <div class="flex row">
+                            <div class="stars"></div>&nbsp;&nbsp;<span><i class="fas fa-angle-down"></i></span>
+                        </div>
+                        <p class="rating">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">41 ratings</a></p>
                     </div>
                 </div>
                 <div class="product-info">
                     <p class="price">
-                        Price: $69.95 & FREE Shipping to Israel.</p>
-                    <p class="import"></p>
+                        Price: <span class="price-color">$69.95</span> & <b> FREE Shipping</b> to Israel.</p>
+                    <p class="import">No Import Fees Deposit & <b>FREE Shipping</b> to Israel <a class="details-link"
+                            href="#">Details </a><i class="fas fa-angle-down"></i></p>
                     <table class="product-details">
                         <tr>
                             <th>Brand</th>
@@ -219,23 +221,26 @@
                 </div>
             </section>
             <aside class="shopping-info-container">
-                <div class="box">
-                    <h2 class="price-color">$69.95</h2>
-                    <p>No Import Fees Deposit & FREE Shipping to Israel Details <i class="fas fa-angle-down"></i> </p>
-                    <p>This item ships to <b>Israel.</b> Arrives: <b>Wednesday, Dec 15</b></p>
-                    <div class="shopping-link-icon"><a class="deliver-link" href="#">Deliver to Israel</a></div>
-                    <h2>In Stock.</h2>
-                    <select class="qtt-dropdown" name="" id="" disabled="disabled">
-                        <option value="">1</option>
+                <div class="box box-1">
+                    <h2 class="price-color mt15 mb15">$69.95</h2>
+                    <p class="mb15">No Import Fees Deposit & <b>FREE Shipping</b> to Israel <a
+                            class="details-link href=" #">Details</a> <i class="fas fa-angle-down"></i> </p>
+                    <p class="mb15">This item ships to <b>Israel.</b> Arrives: <b>Wednesday, Dec 15</b></p>
+                    <div class="flex row"> <a class="deliver-link" href="#">Deliver to Israel</a></div>
+                    <div class="shopping-link-icon"></div>
+                    <h3 class="stock-header mb15">In Stock.</h3>
+                    <select class="qtt-dropdown mb10" name="" id="">
+                        <option selected value="">Qty: 1</option>
                         <option value="">2</option>
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
                     </select>
-                    <input type="button" value="Add to Cart">
-                    <input type="button" value="Buy Now">
-                    <p class="secure-icon"></p><span>Secure transaction</span>
-                    <table>
+                    <button class="shopping-btn add-item-btn add pointer">Add to Cart</button>
+                    <button class="shopping-btn buy-now-btn buy-now pointer">Buy Now</button>
+                    <img class="secure-icon " src="./assets/images/secured-ssl._CB485936932_.png"
+                        width="10px"></img><span class="secure-trans pointer">&nbsp;&nbsp;Secure transaction</span>
+                    <table class="mt15 mb15 trans-table">
                         <tr>
                             <td>Ships from</td>
                             <td>Amazon.com</td>
@@ -245,96 +250,124 @@
                             <td>Amazon.com</td>
                         </tr>
                     </table>
-                    <p>Return policy: <span>Returnable until Jan 31, 2022 </span><i class="fas fa-angle-down"></i></p>
-                    <label for="check">Add a gift receipt for easy returns</label>
-                    <input type="checkbox" name="" id="check">
-                    <p></p>
-                    <input type="button" value="Add to List">
-                </div>
-                <div class="box">
-                    New (2) from <span class="price-color">$69.95</span>
-                </div>
-                <ul class="share-list">
-                    <li class="share-item"><a href="#"></a></li>
-                    <li class="share-item"><a href="#"></a></li>
-                    <li class="share-item"><a href="#"></a></li>
-                    <li class="share-item"><a href="#"></a></li>
-                    <li class="share-item"><a href="#"></a></li>
-                </ul>
-                <div class="box seller-info">
-                    <h3>Other Sellers on Amazon</h3>
-                    <div class="buy-container flex row">
-                        <p class="price-color">$69.95</p>
-                        <input type="button" value="Add to Cart">
+                    <p class="mb10">Return policy: <span class="hover-price pointer mb10">Returnable until Jan 31, 2022
+                        </span><i class="fas fa-angle-down"></i></p>
+                    <div class="checkbox-container mb15">
+                        <input type="checkbox" name="" id="check">
+                        <label for="check">Add a gift receipt for easy returns</label>
                     </div>
-                    <p>Sold by: <a href="#">Mugan_Music_Group</a></p>
+                    <p></p>
+                    <button class="add-to-list-btn mb15">Add to List </button>
+                </div>
+                <div class="box box-2 mt15 ">
+                    <p class="shopping-footer mt10 mb10"><span class="arrow-icon"></span> New (2) from <span
+                            class="price-color">$69.95</span></p>
+                </div>
+                <ul class="share-list flex">
+                    <li class="share-item"><a class="price-hover" href="#">Share</a></li>
+                    <li class="share-item email-icon pointer"></li>
+                    <li class="share-item facebook-icon pointer"></li>
+                    <li class="share-item pointer twitter-icon"></li>
+                    <li class="share-item pinterest-icon pointer"></li>
+                </ul>
+                <div class="box seller-info mb15">
+                    <p class="other-sellers mt10 mb10"><b> Other Sellers on Amazon</b></p>
+                    <div class="no-margin sep "></div>
+                    <div class="buy-container mt10 mb10 flex row">
+                        <p class="price-color">$69.95</p>
+                        <button class="add-cart-btn pointer">Add to Cart</button>
+                    </div>
+                    <p class="soldby">Sold by: <a class="soldby-link" href="#">Mugan_Music_Group</a></p>
                 </div>
 
-                <div class="box product-summary">
-                    <div class="summary-img-container flex row">
-                        <img src="./assets/images/71LuQrZuXES._AC_UL160_SR160,160_" alt="">
-                        <img src="./assets/images/8d75e77c-1a92-4eae-a294-42189bd1c7e1._CR0,0,794,674_AC_AC_SX120_SY70_" alt="">
+                <div class="box product-summary mb10">
+                    <div class="summary-img-container mt15 flex row">
+                        <img src="./assets/images/71LuQrZuXES._AC_UL160_SR160,160_.jpg" alt="">
+                        <div class="gift-container flex column">
+                            <img src="./assets/images/8d75e77c-1a92-4eae-a294-42189bd1c7e1._CR0,0,794,674_AC_AC_SX120_SY70_.jpg"
+                                alt="">
+                            <p class="mt15">Gifts For Every Style</p>
+                        </div>
                     </div>
                     <p>Zildijan Planet Z HiHat Cymbal Pair (ZP13PR)</p>
-                    <div class="rating-container flex row">
-                        <div class="stars"></div>
+                    <div class="rating-container  flex row">
+                        <div class="aside-stars-icon"></div>
                         <p class="rating">124</p>
                     </div>
-                    <p><span class="prime-logo"></span></p>
+                    <p class="flex mb10"><span class="small-dollar">$</span><span class="seventynine">79.95</span><span
+                            class="prime-logo"></span></p>
                 </div>
+
             </aside>
             <section class="freq-container">
-                <h2>Frequently bought together</h2>
+                <h3>Frequently bought together</h3>
                 <div class="freq-img-container flex row">
-                    <div class="freq-img">
-                        <img src="" alt="">
-                        <p>+</p>
+                    <div class=" freq-img flex">
+                        <img src="./assets/images/71keflo4LrS._AC_UL116_SR116,116_.jpg" alt="">
+                        <p class="first-plus">&nbsp; +</p>
                     </div>
-                    <div class="freq-img">
-                        <img src="" alt="">
-                        <p>+</p>
+                    <div class="freq-img flex">
+                        <img src="./assets/images/51jRRogKh8L._AC_UL116_SR116,116_.jpg" alt="">
+                        <p class="last-plus">+ &nbsp;</p>
                     </div>
-                    <div class="freq-img">
-                        <img src="" alt="">
+                    <div class="freq-img flex">
+                        <img src="./assets/images/71LuQrZuXES._AC_UL116_SR116,116_.jpg" alt="">
                     </div>
-                    <div>
-                        <p>Total price: <span class="price-color"> $193.48</span></p>
-                        <input type="button" value="Add all three to Cart">
+                    <div class="freq-add-container">
+                        <p class="total-price mb10">Total price: $<span class="price-color freq-total-price">
+                                193.48</span></p>
+                        <button class="add-cart-btn">Add all three to Cart</button>
                     </div>
                 </div>
-                <p> <span class="info-icon"> INFO-ICON</span> Some of these items ship sooner than the others.
-                    <a href="#">Show details</a>
-                </p>
+                <div class="freq-info mt15 flex">
+                    <div class="info-icon"></div>&nbsp; Some of these items ship sooner than the others.
+                    <a class="" href="#">&nbsp;Show details</a>
+                </div>
+                <div class="freq-checkbox-container flex column mt10">
+                    <div >
+                        <input type="checkbox" class="freq-checkbox" checked name="" id="freq-1">
+                        <label for="freq-1">This item: Zildjian Crash Cymbal (ILH14C)
+                            <span class=" price-color"> $69.95</span></label>
+                    </div>
+                    <div >
+                        <input type="checkbox" class="freq-checkbox" checked name="" id="freq-2">
+                        <label for="freq-2 hover-price">Luvay Boom Cymbal Stand, Single Braced Lightweight (4.5lb)
+                            <span class=" price-color"> $43.58</span></label>
+                    </div>
+                    <div >
+                        <input type="checkbox" class="freq-checkbox" checked name="" id="freq-3">
+                        <label for="freq-3 hover-price">Zildjian Planet Z HiHat Cymbal Pair (ZP13PR)
+                            <span class=" price-color"> $79.95</span></label>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
-    <section clas="related-container">
-        <div class="related-header-container flex row">
+    <section class="related-container">
+        <div class="related-header-container flex row mb15">
             <h2 class="price-color">Products related to this item</h2>
             <!-- will be changed dynamically -->
-            <p class="page">Page 1 of 32</p> 
+            <p class="page">Page <span class="curr-page">1</span>  of <span class="pages-total"></span></p>
         </div>
-        <p>sponsored</p>
-        <div class="carrousel-contaier">
-            <input type="button" value="">
-            <ul class="card-list">
-                <li class="card-item"></li>
-                <li class="card-item"></li>
-                <li class="card-item"></li>
-                <li class="card-item"></li>
-                <li class="card-item"></li>
-                <li class="card-item"></li>
+        <p class="sponsored pointer mb15">sponsored <i class="fas fa-info-circle"></i></p>
+        <div class="carousel-container flex">
+            <button class="carousel-arrow left-carousel-arrow"><i class="fas fa-chevron-left"></i></button>
+            <ul class="carousel-list flex row">
+                <!-- CARDS RENDERED HEREEEEE -->
             </ul>
-            <input type="button" value="">
+            <button class="carousel-arrow right-carousel-arrow"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
+    <article>
+        <h1>Sorry I didnt have the time to finish this task :(</h1>
+        <img src="https://media.giphy.com/media/8UGoOaR1lA1uaAN892/giphy.gif" alt="" srcset="">
+    </article>
 
-    <a
-        href="https://www.amazon.com/dp/B0829PLYHJ/ref=syn_sd_onsite_desktop_51?psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyWlJINDNVQjZWR1NTJmVuY3J5cHRlZElkPUEwOTY3ODQyM09GMERQRkFBQVpVUiZlbmNyeXB0ZWRBZElkPUEwMzI2OTA3SEo5S0ZBQ0tUWlEmd2lkZ2V0TmFtZT1zZF9vbnNpdGVfZGVza3RvcCZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=">
-        original link
-    </a>
 
-    <script src="scripts/script.js"></script>
+    <script src="scripts/checkboxes.js"></script>
+    <script src="scripts/handleCart.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/displayBigImage.js"></script>
 </body>
 
 </html>
